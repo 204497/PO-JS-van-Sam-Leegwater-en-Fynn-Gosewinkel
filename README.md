@@ -1,1 +1,1 @@
-# PO-JS-van-Sam-Leegwater-en-Fynn-Gosewinkel
+Sam Leegwater en Fynn Gosewinkel
