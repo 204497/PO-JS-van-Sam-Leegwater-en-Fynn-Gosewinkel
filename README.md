@@ -1,2 +1,2 @@
 Sam Leegwater en Fynn Gosewinkel
-oefenen 
+oefenen met github
