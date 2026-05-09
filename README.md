@@ -1,2 +1,3 @@
 Sam Leegwater en Fynn Gosewinkel
-PO Javascript oefenen 
+PO Javascript 
+spel maken 
