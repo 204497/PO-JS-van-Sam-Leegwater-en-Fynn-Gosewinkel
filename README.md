@@ -1,2 +1,2 @@
 Sam Leegwater en Fynn Gosewinkel
-PO Javascript 
+PO Javascript oefenen 
