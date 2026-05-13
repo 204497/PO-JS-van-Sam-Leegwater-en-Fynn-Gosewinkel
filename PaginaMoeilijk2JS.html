@@ -55,7 +55,7 @@
             <br>
             <br>
             <br>
-            <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 30px; text-align: center; color: rgb(255, 255, 255);"> Wanneer eindigde de Eerste Wereldoorlog? </h1> <!-- Tekst in een kopje met aangepaste eigenschappen. SL --> 
+            <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 30px; text-align: center; color: rgb(255, 255, 255);"> Wat is het grootste orgaan van de mens? </h1> <!-- Tekst in een kopje met aangepaste eigenschappen. SL --> 
             <p style="color: white;"> Klik op de knop om uw antwoord in te vullen. <!-- Tekst in een paragraaf. SL --> </p>
             <br>
             <br>
@@ -63,39 +63,39 @@
             <a href="PaginaMoeilijk2JS.html"> <p style="color: white;"> Klik hier voor de volgende vraag!</p></a>
             
             <script>
-                let knopMoeilijk1 = document.createElement("button");
-                knopMoeilijk1.textContent = "Beantwoord vraag"
-                knopMoeilijk1.style.position = "absolute";
-                knopMoeilijk1.style.left = "700px";
-                knopMoeilijk1.style.top = "500px";
-                knopMoeilijk1.style.backgroundColor = "black";
-                knopMoeilijk1.style.color = "white";
+                let knopMoeilijk2 = document.createElement("button");
+                knopMoeilijk2.textContent = "Beantwoord vraag"
+                knopMoeilijk2.style.position = "absolute";
+                knopMoeilijk2.style.left = "700px";
+                knopMoeilijk2.style.top = "500px";
+                knopMoeilijk2.style.backgroundColor = "black";
+                knopMoeilijk2.style.color = "white";
 
-                knopMoeilijk1.onclick = function () {
-                    let antwoord = Number(prompt("Wanneer eindigde de Eerste Wereldoorlog?"));
+                knopMoeilijk2.onclick = function () {
+                    let antwoord = String(prompt("Wat is het grootste orgaan van de mens? (Met lidwoord)" ));
 
-                    if (isNaN(antwoord)) {
-                        alert("Typ een getal!")
+                    if (Number(antwoord)) {
+                        alert("Vul een woord in!")
                     }
-                    else if (antwoord === "1918") {
+                    else if (antwoord.toLowerCase() === "de huid") {
                     alert("Je hebt het goed!")
                 } else {
                     alert("Je hebt het fout!")
                 }
                 };
 
-                document.body.appendChild(knopMoeilijk1);
+                document.body.appendChild(knopMoeilijk2);
 
-                let knopMoeilijkHint1 = document.createElement("button");
-                knopMoeilijkHint1.textContent = "Hint"
-                knopMoeilijkHint1.style.position = "absolute";
-                knopMoeilijkHint1.style.left = "650px";
-                knopMoeilijkHint1.style.top = "500px";
-                knopMoeilijkHint1.style.backgroundColor = "black";
-                knopMoeilijkHint1.style.color = "white";
+                let knopMoeilijkHint2 = document.createElement("button");
+                knopMoeilijkHint2.textContent = "Hint"
+                knopMoeilijkHint2.style.position = "absolute";
+                knopMoeilijkHint2.style.left = "650px";
+                knopMoeilijkHint2.style.top = "500px";
+                knopMoeilijkHint2.style.backgroundColor = "black";
+                knopMoeilijkHint2.style.color = "white";
 
-                knopMoeilijkHint1.onclick = function () {
-                    alert("De Eerste Wereldoorlog eindigde in de jaren 20.")
+                knopMoeilijkHint2.onclick = function () {
+                    alert("Het grootste orgaan van de mens heeft vier letters.")
                  }
                 document.body.appendChild(knopMoeilijkHint1);
             </script>
