@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+    <title>
+        Moeilijk Level
+    </title>
+    <head>
+        <style>  
+            body { 
+            background-image: url(fotop1.jpg);
+            background-size: 1800px;
+            background-position: left -150px bottom 750px;            
+
+            }
+            p {
+            color:rgb(0, 0, 0);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-align: center;
+            }
+
+            .blok {
+            border: 1px solid #333;   
+            padding: 15px;            
+            background-color: #f0f0f0;
+            width: 300px;             
+            margin: 20px auto;        
+            border-radius: 8px;  
+            }     
+
+            a {
+            color: white;
+            
+
+            
+}
+
+        </style>
+        <body> <!-- Begin van de pagina. SL --> 
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 30px; text-align: center; color: rgb(255, 255, 255);"> Hoe lang is een giraffe? </h1> <!-- Tekst in een kopje met aangepaste eigenschappen. SL --> 
+            <p style="color: white;"> Klik op uw keuze. <!-- Tekst in een paragraaf. SL --> </p>
+            <br>
+            <br>
+            <br>
+            
+            <script>
+                let knopMoeilijk1 = document.createElement("button");
+                knopMoeilijk1.textContent = "Beantwoord vraag"
+                knopMoeilijk1.style.position = "absolute";
+                knopMoeilijk1.style.left = "725px";
+                knopMoeilijk1.style.top = "500px";
+                knopMoeilijk1.style.backgroundColor = "black";
+                knopMoeilijk1.style.color = "white";
+
+                knopMoeilijk1.onclick = function () {
+                    let antwoord = Number(prompt("Wanneer eindigde de Eerste Wereldoorlog?"));
+
+                    if (isNaN(antwoord)) {
+                        alert("Typ een getal!")
+                    }
+                    else if (antwoord === "1918") {
+                    alert("Je hebt het goed!")
+                } else {
+                    alert("Je hebt het fout!")
+                }
+                };
+
+                document.body.appendChild(knopMoeilijk1);
+            </script>
+        </body>
+    </head>
+</html>
