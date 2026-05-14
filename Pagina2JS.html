@@ -44,24 +44,46 @@
             <br>
             <br>
             <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 30px; text-align: center; color: rgb(255, 255, 255);"> Welk level wilt u spelen?" </h1> <!-- Tekst in een kopje met aangepaste eigenschappen. SL --> 
+            <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 30px; text-align: center; color: rgb(255, 255, 255);"> Welk onderwerp wilt u spelen?" </h1> <!-- Tekst in een kopje met aangepaste eigenschappen. SL --> 
             <p style="color: white;"> Klik op uw keuze. <!-- Tekst in een paragraaf. SL --> </p>
             <br>
             <br>
             <br>
-            <a href="PaginaAlgemeen_vraag1JS.html"> <p style="color: white;"> Makkelijk </p></a>
-            <a href="PaginaMoeilijk1JS.html"> <p style="color: white;"> Moeilijk </p></a>
+            <div class="menu">
+            <a href="PaginaAlgemeen_vraag1JS.html"> <p style="color: white;"> Algemeen </p></a>
+            <a href="PaginaEten_vraag11JS.html"> <p style="color: white;"> Eten </p></a>
+            <a href="PaginaDieren_vraag1JS.html"> <p style="color: white;"> Dieren </p></a>
+            <a href="PaginaGeschiedenis_vraag1JS.html"> <p style="color: white;"> Geschiedenis </p></a>
+            <a href="PaginaLandenTopografie_vraag1JS.html"> <p style="color: white;"> Landen & topografie </p></a>
+            <a href="PaginaMuziek_vraag1JS.html"> <p style="color: white;"> Muziek </p></a>
+                </div>
+                <style>
+            .menu {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+                width: 500px;
+                align-items: center;
+                margin: 0 auto;
+            }
+            .menu a {
+                background-color: #2c3e50;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 80px;
+                transition: 0.2s;
+}
+            .menu a p {
+                color: white;
+                margin: 20;
+                text-align: center;
+            }
+        </style>
+
         </body>
     </head>
 </html>
