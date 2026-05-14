@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+    <title>
+        Moeilijk Level
+    </title>
+    <head>
+        <style>  
+            body { 
+            background-image: url(fotop1.jpg);
+            background-size: 1800px;
+            background-position: left -150px bottom 750px;            
+
+            }
+            p {
+            color:rgb(0, 0, 0);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-align: center;
+            }
+
+            .blok {
+            border: 1px solid #333;   
+            padding: 15px;            
+            background-color: #f0f0f0;
+            width: 300px;             
+            margin: 20px auto;        
+            border-radius: 8px;  
+            }     
+
+            a {
+            color: white;
+            
+
+            
+}
+
+        </style>
+        <body> <!-- Begin van de pagina. SL --> 
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 30px; text-align: center; color: rgb(255, 255, 255);"> Wat is het grootste orgaan van de mens? </h1> <!-- Tekst in een kopje met aangepaste eigenschappen. SL --> 
+            <p style="color: white;"> Klik op de knop om uw antwoord in te vullen. <!-- Tekst in een paragraaf. SL --> </p>
+            <br>
+            <br>
+            <br>
+            <a href="PaginaMoeilijk2JS.html"> <p style="color: white;"> Klik hier voor de volgende vraag!</p></a>
+            
+            <script>
+                let knopMoeilijk2 = document.createElement("button");
+                knopMoeilijk2.textContent = "Beantwoord vraag"
+                knopMoeilijk2.style.position = "absolute";
+                knopMoeilijk2.style.left = "700px";
+                knopMoeilijk2.style.top = "500px";
+                knopMoeilijk2.style.backgroundColor = "black";
+                knopMoeilijk2.style.color = "white";
+
+                knopMoeilijk2.onclick = function () {
+                    let antwoord = String(prompt("Wat is het grootste orgaan van de mens? (Met lidwoord)" ));
+
+                    if (Number(antwoord)) {
+                        alert("Vul een woord in!")
+                    }
+                    else if (antwoord.toLowerCase() === "de huid") {
+                    alert("Je hebt het goed!")
+                } else {
+                    alert("Je hebt het fout!")
+                }
+                };
+
+                document.body.appendChild(knopMoeilijk2);
+
+                let knopMoeilijkHint2 = document.createElement("button");
+                knopMoeilijkHint2.textContent = "Hint"
+                knopMoeilijkHint2.style.position = "absolute";
+                knopMoeilijkHint2.style.left = "650px";
+                knopMoeilijkHint2.style.top = "500px";
+                knopMoeilijkHint2.style.backgroundColor = "black";
+                knopMoeilijkHint2.style.color = "white";
+
+                knopMoeilijkHint2.onclick = function () {
+                    alert("Het grootste orgaan van de mens heeft vier letters.")
+                 }
+                document.body.appendChild(knopMoeilijkHint1);
+            </script>
+        </body>
+    </head>
+</html>
