@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>Dieren vraag 3</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&h=800&fit=crop');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 90%;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .vraag {
+            color: #555;
+            font-size: 18px;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        .opties {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .optie {
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        .optie:hover {
+            background-color: #f0f0f0;
+            border-color: #999;
+        }
+
+        .optie input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 25px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .resultaat {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            display: none;
+        }
+
+        .correct {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .incorrect {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dieren vraag 3</h1>
+        <div class="vraag">Hoe noem je een groep vissen van dezelfde soort?</div>
+        
+        <form id="quizForm">
+            <div class="opties">
+                <label class="optie">
+                    <input type="radio" name="antwoord" value="school"> School
+                </label>
+                <label class="optie">
+                    <input type="radio" name="antwoord" value="roedel"> Roedel
+                </label>
+                <label class="optie">
+                    <input type="radio" name="antwoord" value="troep"> Troep
+                </label>
+                <label class="optie">
+                    <input type="radio" name="antwoord" value="zwerm"> Zwerm
+                </label>
+            </div>
+
+            <button type="button" onclick="controleerAntwoord()">Controleer Antwoord</button>
+        </form>
+
+        <div class="resultaat" id="resultaat"></div>
+    </div>
+
+    <script>
+        function controleerAntwoord() {
+            const form = document.getElementById('quizForm');
+            const geselecteerd = form.querySelector('input[name="antwoord"]:checked');
+            const resultaatDiv = document.getElementById('resultaat');
+
+            if (!geselecteerd) {
+                alert('Kies een antwoord!');
+                return;
+            }
+
+            if (geselecteerd.value === 'school') {
+                resultaatDiv.textContent = 'Correct! School is het juiste antwoord.';
+                resultaatDiv.className = 'resultaat correct';
+            } else {
+                resultaatDiv.textContent = 'Fout! Het juiste antwoord is: school';
+                resultaatDiv.className = 'resultaat incorrect';
+            }
+
+            resultaatDiv.style.display = 'block';
+        }
+        let Verder_Knop = document.createElement("button");
+                Verder_Knop.textContent = "verder";
+
+                Verder_Knop.style.position = "absolute";
+                Verder_Knop.style.left = "1150px";
+                Verder_Knop.style.width = "100px";
+                Verder_Knop.style.top = "450px";
+                Verder_Knop.style.backgroundColor = "white";
+                Verder_Knop.style.color = "black";
+
+                Verder_Knop.onclick = function () {
+                    window.location.href = "Pagina_EindeJS.html";
+                };
+
+                document.body.appendChild(Verder_Knop);
+    </script>
+</body>
+</html>

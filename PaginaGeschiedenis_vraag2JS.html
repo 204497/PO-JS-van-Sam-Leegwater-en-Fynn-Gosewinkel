@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>
+            Geschiedenis vraag 2
+        </title>
+        <style>  
+            body { 
+            background-image: url("https://images.unsplash.com/photo-1485738422979-f5c462d49f74?auto=format&fit=crop&w=1200&q=80");            background-size: 1800px;
+            background-position: left -150px bottom 650px;            
+
+            }
+            p {
+            color:rgb(0, 0, 0);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-align: center;
+            }
+
+            .blok {
+            border: 1px solid #333;   
+            padding: 15px;            
+            background-color: #f0f0f0;
+            width: 300px;             
+            margin: 20px auto;        
+            border-radius: 8px;  
+            }     
+
+            a {
+            color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 30px; text-align: center; color: rgb(255, 255, 255);"> Wie was de eerste president van de Verenigde Staten? </h1>
+        <div style="text-align: center">
+        <input type="text" name="voornaam" placeholder="Typ je antwoord hier">
+        </div>
+        <script>
+            let input = document.querySelector('input[name="voornaam"]');
+            input.addEventListener('keypress', function(event) {
+                if (event.key === 'Enter') {
+                    if (input.value.trim().toLowerCase() === "george washington") {
+                        alert("Goed gedaan! Je gaat door naar de volgende vraag.");
+                    } else {
+                        alert("Helaas, dat is niet correct. Probeer het nog eens!");
+                    }
+                }
+            });
+            let Verder_Knop = document.createElement("button");
+                Verder_Knop.textContent = "Volgende vraag";
+
+                Verder_Knop.style.position = "absolute";
+                Verder_Knop.style.left = "1156px";
+                Verder_Knop.style.top = "500px";
+                Verder_Knop.style.backgroundColor = "white";
+                Verder_Knop.style.color = "black";
+
+                Verder_Knop.onclick = function () {
+                    window.location.href = "PaginaGeschiedenis_vraag3JS.html";
+                };
+
+                document.body.appendChild(Verder_Knop);
+        </script>
+    </body>
+
+   
