@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dieren Quiz</title>
+
+    <style>
+
+        body {
+            background-image: url("https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1200");
+            background-size: cover;
+            text-align: center;
+            font-family: Arial;
+        }
+
+        .quiz {
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            margin-top: 100px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 200px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="quiz">
+
+        <h1>Dieren Quiz</h1>
+
+        <p>Hoe lang is een giraffe?</p>
+
+        <input type="radio" name="antwoord" value="fout"> 3 meter
+        <br><br>
+
+        <input type="radio" name="antwoord" value="goed"> 5 meter
+        <br><br>
+
+        <input type="radio" name="antwoord" value="fout"> 7 meter
+        <br><br>
+
+        <input type="radio" name="antwoord" value="fout"> 2 meter
+        <br><br>
+
+        <button onclick="controleer()">Controleer</button>
+
+    </div>
+
+    <script>
+
+        function controleer() {
+
+            let antwoord = document.querySelector('input[name="antwoord"]:checked');
+
+            if (antwoord == null) {
+                alert("Kies eerst een antwoord");
+            }
+
+            else if (antwoord.value == "goed") {
+                alert("Goed gedaan!");
+            }
+
+            else {
+                alert("Fout!");
+            }
+
+        }
+
+        let Verder_Knop = document.createElement("button");
+                Verder_Knop.textContent = "Volgende vraag";
+
+                Verder_Knop.style.position = "absolute";
+                Verder_Knop.style.left = "1050px";
+                Verder_Knop.style.top = "475px";
+                Verder_Knop.style.backgroundColor = "black";
+                Verder_Knop.style.color = "white";
+
+                Verder_Knop.onclick = function () {
+                    window.location.href = "PaginaDieren_vraag2JS.html";
+                };
+
+                document.body.appendChild(Verder_Knop);
+    </script>
+
+</body>
+</html>

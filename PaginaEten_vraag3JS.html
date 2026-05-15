@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Vraag over Eten</title>
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(0,0,0,0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vraag 3: Eten</h1>
+    <form>
+        <p>Hoe wordt vanille ijs met chocolade saus genoemd?</p>
+        <input type="radio" name="answer" value="Dame Blanche" id="opt1">
+        <label for="opt1">Dame Blanche</label><br>
+        <input type="radio" name="answer" value="Sundae" id="opt2">
+        <label for="opt2">Sundae</label><br>
+        <input type="radio" name="answer" value="Banana Split" id="opt3">
+        <label for="opt3">Banana Split</label><br>
+        <input type="radio" name="answer" value="Milkshake" id="opt4">
+        <label for="opt4">Milkshake</label><br>
+        <button type="button" onclick="checkAnswer()">Controleer Antwoord</button>
+    </form>
+    <p id="result" style="text-align: center; font-weight: bold;"></p>
+    <script>
+        function checkAnswer() {
+            var selected = document.querySelector('input[name="answer"]:checked');
+            if (selected) {
+                if (selected.value === 'Dame Blanche') {
+                    document.getElementById('result').innerText = 'Correct!';
+                } else {
+                    document.getElementById('result').innerText = 'Fout, probeer het nog eens.';
+                }
+            } else {
+                document.getElementById('result').innerText = 'Selecteer een antwoord.';
+            }
+        }
+        let Verder_Knop = document.createElement("button");
+                Verder_Knop.textContent = "Einde quiz";
+
+                Verder_Knop.style.position = "absolute";
+                Verder_Knop.style.left = "1125px";
+                Verder_Knop.style.top = "500px";
+                Verder_Knop.style.backgroundColor = "white";
+                Verder_Knop.style.color = "black";
+
+                Verder_Knop.onclick = function () {
+                    window.location.href = "Pagina_EindeJS.html";
+                };
+
+                document.body.appendChild(Verder_Knop);
+    </script>
+</body>
+</html>
