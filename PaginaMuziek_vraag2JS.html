@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <title>
+            Muziek vraag 2
+        </title>
+        <style> 
+            body { 
+         background-image: url(MuziekAchtergrondvraag2.png);
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+          
+
+            
+            p {
+            color:rgb(0, 0, 0);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-align: center;
+            }
+
+            .blok {
+            border: 1px solid #333;   
+            padding: 15px;            
+            background-color: #f0f0f0;
+            width: 300px;             
+            margin: 20px auto;        
+            border-radius: 8px;  
+            }     
+
+            a {
+            color: white;
+        
+}
+        </style>
+    </head>
+    <body> <!-- Begin van de pagina. SL --> 
+        <br> 
+        <br>
+        <br>
+        <br>
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 30px; text-align: center; color: rgb(255, 255, 255);"> Maak de beroemde songtekst af. </h1> <!-- Tekst in een kopje met aangepaste eigenschappen. SL -->
+        <p style="color: white;"> A singer in a smokey room, a smell of ... <!-- Tekst in een paragraaf. SL --> </p>
+        <br>
+        <div style="text-align: center">
+        
+        <input type="text" name="voornaam" placeholder="Typ je antwoord hier">
+        </div>
+        <script>
+        let input = document.querySelector('input[name="voornaam"]');
+            input.addEventListener('keypress', function(event) {
+                if (event.key === 'Enter') {
+                    if (input.value.trim().toLowerCase() === "wine and cheap perfume") {
+                        alert("Goed gedaan! Je gaat door naar de volgende vraag.");
+                    } else {
+                        alert("Helaas, dat is niet correct. Probeer het nog eens!");
+                    }
+                }
+            });
+        let Verder_Knop = document.createElement("button");
+                Verder_Knop.textContent = "Laatste vraag!";
+
+                Verder_Knop.style.position = "absolute";
+                Verder_Knop.style.left = "1200px";
+                Verder_Knop.style.top = "500px";
+                Verder_Knop.style.backgroundColor = "black";
+                Verder_Knop.style.color = "white";
+
+                Verder_Knop.onclick = function () {
+                    window.location.href = "PaginaMuziek_vraag3JS.html";
+                };
+
+                document.body.appendChild(Verder_Knop);
+        </script> 
+

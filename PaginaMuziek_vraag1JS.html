@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>
+            vraag 1
+        </title>
+        <style>  
+            body { 
+            background-image: url(fotop1.jpg);
+            background-size: 1800px;
+            background-position: left -150px bottom 650px;            
+
+            }
+            p {
+            color:rgb(0, 0, 0);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-align: center;
+            }
+
+            .blok {
+            border: 1px solid #333;   
+            padding: 15px;            
+            background-color: #f0f0f0;
+            width: 300px;             
+            margin: 20px auto;        
+            border-radius: 8px;  
+            }     
+
+            a {
+            color: white;
+            
+}
+        </style>
+    </head>
+    <body> <!-- Begin van de pagina. SL --> 
+        <br> 
+        <br>
+        <br>
+        <br>
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 30px; text-align: center; color: rgb(255, 255, 255);"> Wanneer kwam het eerste album van Katy Perry uit? </h1> <!-- Tekst in een kopje met aangepaste eigenschappen. SL -->
+        <p style="color: white;"> Klik op uw keuze. <!-- Tekst in een paragraaf. SL --> </p>
+        <br>
+        <script>
+                let knop1 = document.createElement("button");
+                knop1.textContent = "a. 2003"
+
+                knop1.style.position = "absolute";
+                knop1.style.left = "600px";
+                knop1.style.top = "375px";
+                knop1.style.backgroundColor = "black";
+                knop1.style.color = "white";
+
+                knop1.onclick = function () {
+                    alert("Je hebt het fout!")
+                };
+
+                document.body.appendChild(knop1);
+
+                let knop2 = document.createElement("button");
+                knop2.textContent = "b. 2005"
+
+                knop2.style.position = "absolute";
+                knop2.style.left = "600px";
+                knop2.style.top = "400px";
+                knop2.style.backgroundColor = "black";
+                knop2.style.color = "white";
+
+                knop2.onclick = function () {
+                    alert("Je hebt het fout!")
+                };
+
+                document.body.appendChild(knop2);
+
+                let knop3 = document.createElement("button");
+                knop3.textContent = "c. 2000"
+
+                knop3.style.position = "absolute";
+                knop3.style.left = "600px";
+                knop3.style.top = "425px";
+                knop3.style.backgroundColor = "black";
+                knop3.style.color = "white";
+
+                knop3.onclick = function () {
+                    alert("Je hebt het fout!")
+                };
+
+                document.body.appendChild(knop3);
+
+                let knop4 = document.createElement("button");
+                knop4.textContent = "d. 2001"
+
+                knop4.style.position = "absolute";
+                knop4.style.left = "600px";
+                knop4.style.top = "450px";
+                knop4.style.backgroundColor = "black";
+                knop4.style.color = "white";
+
+                knop4.onclick = function () {
+                    alert("Je hebt het goed!")
+                };
+
+                document.body.appendChild(knop4);
+            let Verder_Knop = document.createElement("button");
+                Verder_Knop.textContent = "Verder";
+
+                Verder_Knop.style.position = "absolute";
+                Verder_Knop.style.left = "1200px";
+                Verder_Knop.style.top = "500px";
+                Verder_Knop.style.backgroundColor = "black";
+                Verder_Knop.style.color = "white";
+
+                Verder_Knop.onclick = function () {
+                    window.location.href = "PaginaMuziek_vraag2JS.html";
+                };
+
+                document.body.appendChild(Verder_Knop);
+        </script>
